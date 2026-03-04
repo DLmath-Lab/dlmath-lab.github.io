@@ -13,12 +13,14 @@
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="jpg/Logo/Logo.jpg" alt="DLmath Logo" class="logo-img">                </a>
+                    <img src="jpg/Logo/Logo.jpg" alt="DLmath Logo" class="logo-img">
+                </a>
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="professor.html">Professor</a>
-                <a href="for_students.html" class="active">Youtube Lecture</a> <a href="people.html">People</a>
+                <a href="for_students.html" class="active">Youtube Lecture</a>
+                <a href="people.html">People</a>
                 <a href="publications.html">Publications</a>
                 <a href="projects.html">Projects</a>
                 <a href="photos.html">Photos</a>
@@ -30,64 +32,65 @@
     <main class="sub-page-content">
         <div class="section-container">
             <h2 class="section-title">Lecture Resources</h2>
-            
-            <div class="material-section">
-                <h3>Lecture Materials</h3>
-                <p>강의 노트 및 수업 자료는 아래 페이지에서 확인할 수 있습니다.</p>
-                <a href="https://sites.google.com/view/seungsangoh/youtube-%EA%B0%95%EC%9D%98-%EC%98%81%EC%83%81" target="_blank" class="main-btn">
-                    Google Sites 강의자료 바로가기 &rarr;
-                </a>
 
-                <!-- ✅ Added: Direct Download Buttons (Google Drive direct links) -->
-                <div style="margin-top: 28px;">
-                    <p style="margin-bottom: 14px; color:#555;">
-                        아래 버튼을 클릭하면 수업자료가 바로 다운로드됩니다.
-                    </p>
-
-                    <div class="button-grid">
-                        <a href="https://drive.google.com/uc?export=download&id=1PQtL045bsPZ8UmtC1kVZxj9XC-vbqDuX" class="youtube-btn">
-                            <span class="icon"></span> Deep Learning (Download)
-                        </a>
-
-                        <a href="https://drive.google.com/uc?export=download&id=1531Lf_pPbhTW1SZYcSvsxRq-TBpIrir-" class="youtube-btn">
-                            <span class="icon"></span> Deep Reinforcement Learning (Download)
-                        </a>
-
-                        <a href="https://drive.google.com/uc?export=download&id=1K5KCvupgBJxMzD0W6THEU2muYcKLpOjC" class="youtube-btn">
-                            <span class="icon"></span> Topology (Download)
-                        </a>
-
-                        <a href="https://drive.google.com/uc?export=download&id=13IViTj26W0R_MyVT4CKJN5WowFF2Mpzs" class="youtube-btn">
-                            <span class="icon"></span> Algebraic Topology (Download)
-                        </a>
-                    </div>
-                </div>
-                <!-- ✅ End Added -->
-
-            </div>
-
-            <hr style="margin: 60px 0; border: 0; border-top: 1px solid #ddd;">
-
+            <!-- ✅ Courses: YouTube + Download paired -->
             <div class="video-section">
-                <h3 style="text-align:center; margin-bottom: 30px; color:#333;">YouTube Lecture Playlists</h3>
-                
-                <div class="button-grid">
+                <h3 style="text-align:center; margin-bottom: 30px; color:#333;">Courses</h3>
+
+                <!-- 카드들을 깔끔히 보이게: 기존 CSS 건드리기 싫으면 인라인로 최소만 -->
+                <div style="display:grid; gap:18px; max-width: 980px; margin: 0 auto;">
                     
-                    <a href="https://www.youtube.com/watch?v=HXIbrL-glpU&list=PLvbUC2Zh5oJtYXow4jawpZJ2xBel6vGhC" target="_blank" class="youtube-btn">
-                        <span class="icon"></span> Reinforcement Learning
-                    </a>
+                    <!-- Reinforcement Learning -->
+                    <div style="border:1px solid #e6e6e6; border-radius:14px; padding:18px;">
+                        <h4 style="margin:0 0 14px 0; color:#222;">Reinforcement Learning</h4>
+                        <div class="button-grid">
+                            <a href="https://www.youtube.com/watch?v=HXIbrL-glpU&list=PLvbUC2Zh5oJtYXow4jawpZJ2xBel6vGhC" target="_blank" class="youtube-btn">
+                                <span class="icon"></span> YouTube Playlist
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=1531Lf_pPbhTW1SZYcSvsxRq-TBpIrir-" class="youtube-btn">
+                                <span class="icon"></span> Download Materials
+                            </a>
+                        </div>
+                    </div>
 
-                    <a href="https://www.youtube.com/watch?v=dkm0RrmnH4s&list=PLvbUC2Zh5oJvByu9KL82bswYT2IKf0K1M" target="_blank" class="youtube-btn">
-                        <span class="icon"></span> Deep Learning
-                    </a>
+                    <!-- Deep Learning -->
+                    <div style="border:1px solid #e6e6e6; border-radius:14px; padding:18px;">
+                        <h4 style="margin:0 0 14px 0; color:#222;">Deep Learning</h4>
+                        <div class="button-grid">
+                            <a href="https://www.youtube.com/watch?v=dkm0RrmnH4s&list=PLvbUC2Zh5oJvByu9KL82bswYT2IKf0K1M" target="_blank" class="youtube-btn">
+                                <span class="icon"></span> YouTube Playlist
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=1PQtL045bsPZ8UmtC1kVZxj9XC-vbqDuX" class="youtube-btn">
+                                <span class="icon"></span> Download Materials
+                            </a>
+                        </div>
+                    </div>
 
-                    <a href="https://www.youtube.com/watch?v=Lpuhr9M7ufE&list=PLvbUC2Zh5oJt4nGm9jX5egv7fEocQnPoz" target="_blank" class="youtube-btn">
-                        <span class="icon"></span> Algebraic Topology
-                    </a>
+                    <!-- Algebraic Topology -->
+                    <div style="border:1px solid #e6e6e6; border-radius:14px; padding:18px;">
+                        <h4 style="margin:0 0 14px 0; color:#222;">Algebraic Topology</h4>
+                        <div class="button-grid">
+                            <a href="https://www.youtube.com/watch?v=Lpuhr9M7ufE&list=PLvbUC2Zh5oJt4nGm9jX5egv7fEocQnPoz" target="_blank" class="youtube-btn">
+                                <span class="icon"></span> YouTube Playlist
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=13IViTj26W0R_MyVT4CKJN5WowFF2Mpzs" class="youtube-btn">
+                                <span class="icon"></span> Download Materials
+                            </a>
+                        </div>
+                    </div>
 
-                    <a href="https://www.youtube.com/watch?v=6sjt8_vbrzY&list=PLvbUC2Zh5oJty3nPh-MD1K2Nc9p82DoCt" target="_blank" class="youtube-btn">
-                        <span class="icon"></span> Topology
-                    </a>
+                    <!-- Topology -->
+                    <div style="border:1px solid #e6e6e6; border-radius:14px; padding:18px;">
+                        <h4 style="margin:0 0 14px 0; color:#222;">Topology</h4>
+                        <div class="button-grid">
+                            <a href="https://www.youtube.com/watch?v=6sjt8_vbrzY&list=PLvbUC2Zh5oJty3nPh-MD1K2Nc9p82DoCt" target="_blank" class="youtube-btn">
+                                <span class="icon"></span> YouTube Playlist
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=1K5KCvupgBJxMzD0W6THEU2muYcKLpOjC" class="youtube-btn">
+                                <span class="icon"></span> Download Materials
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
