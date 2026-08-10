@@ -1,26 +1,11 @@
 /* =========================================================
-   People 데이터 파일  (구성원 정보는 여기만 고치면 됩니다)
+   People 데이터 파일
    ---------------------------------------------------------
-   ※ 직접 고치는 것보다 admin.html 을 브라우저로 열어서
-      편집하는 쪽이 훨씬 편하고 실수도 없습니다.
+   ※ 이 파일은 편집기(admin.html)가 만들어 낸 파일입니다.
 
-   [ 구조 ]
-   PEOPLE_GROUPS = [ 그룹, 그룹, ... ]
-   그룹  = { title: "그룹 이름", members: [ 사람, 사람, ... ] }
-   사람  = { name, role, degree, current, email, interests, homepage }
-
-   [ 사람 항목 설명 ]  ※ 비워두면("") 카드에 아예 표시되지 않습니다
-   name      : 이름 (필수)
-   role      : 이름 바로 아래 한 줄 (예: "Professor")
-   degree    : DEGREE 항목  (예: "M.S. Alumni | 2025")
-   current   : CURRENT 항목 (예: "Ph.D. student at Cornell University")
-   email     : EMAIL 항목
-   interests : RESEARCH INTERESTS 항목
-   homepage  : HOMEPAGE 항목. 주소를 적으면 링크로 걸립니다.
-               반드시 https:// 로 시작해야 합니다.
-
-   카드에는 위 순서(role → degree → current → email → interests
-   → homepage)대로 표시됩니다.
+   그룹 = { title: "그룹 이름", members: [ 사람, ... ] }
+   사람 = { name, role, degree, current, email, interests, homepage }
+   비어 있는("") 항목은 화면에 표시되지 않습니다.
    ========================================================= */
 
 const PEOPLE_GROUPS = [
@@ -109,15 +94,6 @@ const PEOPLE_GROUPS = [
     {
         title: "Interns / Undergraduates",
         members: [
-            {
-                name: "Seoyeon Park",
-                role: "",
-                degree: "",
-                current: "",
-                email: "parkseo08@sogang.ac.kr",
-                interests: "Large Language Model",
-                homepage: ""
-            },
             {
                 name: "Minjeong Lee",
                 role: "",
