@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLmath Lab - People</title>
+    <title>DLmath Lab - News</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,18 +19,17 @@
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="https://sites.google.com/view/seungsangoh/" target="_blank" rel="noopener noreferrer">Professor</a>
-                <a href="news.html">News</a>
+                <a href="news.html" class="active">News</a>
                 <a href="publications.html">Publications</a>
-                <a href="people.html" class="active">People</a>
+                <a href="people.html">People</a>
                 <a href="for_students.html">Youtube Lecture</a>
             </nav>
         </div>
     </header>
 
     <main class="sub-page-content">
-        <div class="section-container bg-light">
-            <h2 class="section-title">Members</h2>
-            <div id="people-groups"></div>
+        <div class="section-container">
+            <article id="news-post" class="news-post"></article>
         </div>
     </main>
 
@@ -43,9 +42,9 @@
         <p>&copy; 2026 DLmath Lab, Korea University. All Rights Reserved.</p>
     </footer>
 
-    <script src="people-data.js"></script>
-    <script src="people.js"></script>
-    <script>renderPeople("people-groups");</script>
+    <script src="news-data.js"></script>
+    <script src="news.js"></script>
+    <script>renderNewsPost();</script>
 
 </body>
 </html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>DLmath Lab - 관리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-top" id="topbar"></div>
+
+<div class="admin-wrap">
+
+    <!-- 아직 반영되지 않은 편집 안내 -->
+    <div class="banner hide" id="draft-banner">
+        <div class="grow">
+            <b>아직 홈페이지에 반영되지 않은 편집 내용이 있습니다.</b><br>
+            오른쪽 위 [연결 설정]에서 GitHub 를 연결하면 [지금 반영]으로 바로 올릴 수 있습니다.
+            연결하지 않으면 아래에서 데이터 파일을 내려받아 직접 덮어써야 합니다.
+        </div>
+        <button class="btn" id="btn-draft-save">지금 반영</button>
+        <button class="btn btn-danger" id="btn-draft-drop">편집 버리기</button>
+    </div>
+
+    <div class="admin-tabs" style="margin-bottom:18px;">
+        <button id="tab-news">News 글</button>
+        <button id="tab-people">People 구성원</button>
+        <button id="tab-pub">Publications 논문</button>
+    </div>
+
+
+    <!-- ============ News ============ -->
+    <div class="panel" id="panel-news">
+        <div class="card">
+            <div class="editor-head">
+                <h2>News 글 목록</h2>
+                <div class="spacer"></div>
+                <a class="btn btn-main" href="admin-write.html">+ 새 글 쓰기</a>
+            </div>
+            <p class="hint">
+                최신 글이 위에 옵니다. 홈 화면에는 위에서 3개가 표시됩니다.
+                <b>보기</b>는 실제 글 페이지를, <b>수정</b>은 편집 화면을 엽니다.
+            </p>
+            <div class="list" id="news-list"></div>
+        </div>
+    </div>
+
+
+    <!-- ============ People ============ -->
+    <div class="panel" id="panel-people">
+        <div class="cols cols-people">
+
+            <div class="card">
+                <h2>구성원</h2>
+                <p class="hint">
+                    화살표로 순서를 바꾸면 홈페이지에도 그 순서로 나옵니다.
+                    졸업한 학생은 [수정]에서 그룹을 Alumni 로 바꾸면 그대로 옮겨집니다.
+                </p>
+                <div id="people-list"></div>
+                <button class="btn" id="btn-add-group" style="margin-top:12px;">+ 그룹 추가</button>
+            </div>
+
+            <div class="card hide" id="member-form">
+                <h2 id="member-form-title">구성원 수정</h2>
+
+                <div class="field">
+                    <label for="m-group">그룹</label>
+                    <select id="m-group"></select>
+                    <p class="desc">다른 그룹을 고르면 그쪽으로 옮겨집니다.</p>
+                </div>
+
+                <div class="field">
+                    <label for="m-name">이름</label>
+                    <input type="text" id="m-name" placeholder="예) Younghyuk Kim">
+                    <p class="desc">필수 항목입니다.</p>
+                </div>
+
+                <div class="field">
+                    <label for="m-role">역할</label>
+                    <input type="text" id="m-role" placeholder="예) Professor">
+                    <p class="desc">이름 바로 아래 한 줄. 학생은 보통 비워둡니다.</p>
+                </div>
+
+                <div class="field">
+                    <label for="m-degree">Degree</label>
+                    <input type="text" id="m-degree" placeholder="예) M.S. Alumni | 2025">
+                </div>
+
+                <div class="field">
+                    <label for="m-current">Current</label>
+                    <input type="text" id="m-current" placeholder="예) Ph.D. student at Cornell University">
+                </div>
+
+                <div class="field">
+                    <label for="m-email">Email</label>
+                    <input type="text" id="m-email" placeholder="예) abc@korea.ac.kr">
+                </div>
+
+                <div class="field">
+                    <label for="m-interests">Research Interests</label>
+                    <textarea id="m-interests" rows="2" placeholder="예) Deep Learning, Computer Vision"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="m-homepage">Homepage</label>
+                    <input type="text" id="m-homepage" placeholder="https://...">
+                    <p class="desc">반드시 https:// 로 시작해야 합니다. 비우면 표시되지 않습니다.</p>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-main" id="btn-save-member">적용</button>
+                    <button class="btn" id="btn-cancel-member">닫기</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ============ Publications ============ -->
+    <div class="panel" id="panel-pub">
+        <div class="cols cols-people">
+
+            <div class="card">
+                <div class="editor-head">
+                    <h2>논문</h2>
+                    <div class="spacer"></div>
+                    <button class="btn btn-main" id="btn-add-pub">+ 논문 추가</button>
+                </div>
+                <p class="hint">
+                    연도별로 묶여서 표시되고, 홈페이지에도 같은 순서로 나옵니다.
+                    화살표는 <b>같은 연도 안에서만</b> 자리를 바꿉니다.
+                </p>
+                <div id="pub-list"></div>
+            </div>
+
+            <div class="card hide" id="pub-form">
+                <h2 id="pub-form-title">논문 수정</h2>
+
+                <div class="field">
+                    <label for="p-year">연도</label>
+                    <input type="text" id="p-year" placeholder="2026" style="max-width:140px;">
+                    <p class="desc">네 자리 숫자. 이 값으로 연도별로 묶입니다.</p>
+                </div>
+
+                <div class="field">
+                    <label for="p-title">논문 제목</label>
+                    <textarea id="p-title" rows="3" placeholder="논문 제목을 그대로 적어 주세요"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="p-venue">학술지 / 학회</label>
+                    <input type="text" id="p-venue" placeholder="예) Journal of Statistical Physics 192, 146">
+                    <p class="desc">권·호·쪽수까지 함께 적으면 됩니다.</p>
+                </div>
+
+                <div class="field">
+                    <label>학술지 글자색</label>
+                    <div class="swatches" id="p-colors"></div>
+                    <div style="display:flex;align-items:center;gap:12px;margin-top:10px;">
+                        <input type="text" id="p-color" placeholder="#0a7a3d" style="max-width:150px;">
+                        <label class="check"><input type="checkbox" id="p-bold"> 굵게</label>
+                    </div>
+                    <p class="desc">위에서 고르거나, 직접 색상 코드를 적어도 됩니다. 비우면 기본 파랑입니다.</p>
+                    <div class="pub-preview" id="p-preview"></div>
+                </div>
+
+                <div class="field">
+                    <label for="p-link">링크 (선택)</label>
+                    <input type="text" id="p-link" placeholder="https://...">
+                    <p class="desc">비워두면 제목으로 구글 학술검색을 여는 주소가 자동으로 만들어집니다.</p>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-main" id="btn-save-pub">적용</button>
+                    <button class="btn" id="btn-cancel-pub">닫기</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="savebar">
+    <div class="msg" id="status"></div>
+    <span class="dl-label">데이터 파일 내려받기</span>
+    <button class="btn" id="btn-dl-news">news</button>
+    <button class="btn" id="btn-dl-people">people</button>
+    <button class="btn" id="btn-dl-pub">publications</button>
+</div>
+
+<script src="news-data.js"></script>
+<script src="people-data.js"></script>
+<script src="publications-data.js"></script>
+<script src="admin-common.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

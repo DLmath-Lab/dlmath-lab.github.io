@@ -71,40 +71,54 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html" class="active">Home</a>
-                <a href="professor.html">Professor</a>
-                <a href="for_students.html">Youtube Lecture</a>
-                <a href="people.html">People</a>
+                <a href="https://sites.google.com/view/seungsangoh/" target="_blank" rel="noopener noreferrer">Professor</a>
+                <a href="news.html">News</a>
                 <a href="publications.html">Publications</a>
-                <a href="projects.html">Projects</a>
-                <a href="photos.html">Photos</a>
-                <a href="contact.html">Contact</a>
+                <a href="people.html">People</a>
+                <a href="for_students.html">Youtube Lecture</a>
             </nav>
         </div>
     </header>
 
     <section class="hero-section">
-        <div class="hero-content">
-            <h1>DLmath Lab</h1>
-            <p>Korea University, Department of Mathematics</p>
-            
-            <p class="hero-sub">
-                DLmath Lab is the Deep Learning and Mathematics research lab at Korea University.<br><br>
+        <div class="hero-inner">
 
-                The Deep Learning and Mathematics (DLmath) Lab is composed of graduate students <br>
-                from the Department of Mathematics at Korea University.<br><br>
-                
-                Our goal is to gain a mathematical understanding <br>
-                of the theoretical foundations of deep learning.<br><br>
-                
-                We also provide deep learning consulting to industry partners <br>
-                looking to adopt AI-driven solutions and modernize their systems.
-            </p>
+            <!-- 왼쪽: 연구실 소개 -->
+            <div class="hero-content">
+                <h1 class="hero-title">DLmath Lab</h1>
+
+                <p class="hero-affil">Korea University, Department of Mathematics</p>
+
+                <div class="hero-sub">
+                    <p>DLmath Lab is the Deep Learning and Mathematics research lab at Korea University.</p>
+                    <p>The Deep Learning and Mathematics (DLmath) Lab is composed of graduate students from the Department of Mathematics at Korea University.</p>
+                    <p>Our goal is to gain a mathematical understanding of the theoretical foundations of deep learning.</p>
+                    <p>We also provide deep learning consulting to industry partners looking to adopt AI-driven solutions and modernize their systems.</p>
+                </div>
+            </div>
+
+            <!-- 오른쪽: 최신 News -->
+            <aside class="hero-news">
+                <h2 class="hero-news-title">News</h2>
+                <div id="news-latest" class="news-list"></div>
+                <a href="news.html" class="hero-news-more">See all News</a>
+            </aside>
+
         </div>
     </section>
 
     <footer>
+        <p class="footer-contact">
+            Room 520, Asan Science Building, Korea University, Seoul 02841, Republic of Korea
+            &nbsp;|&nbsp; <a href="mailto:seungsang@korea.ac.kr">seungsang@korea.ac.kr</a>
+            &nbsp;|&nbsp; +82-2-3290-3086
+        </p>
         <p>© 2026 DLmath Lab, Korea University. All Rights Reserved.</p>
     </footer>
+
+    <script src="news-data.js"></script>
+    <script src="news.js"></script>
+    <script>renderNewsList("news-latest", 3);</script>
 
 </body>
 </html>
