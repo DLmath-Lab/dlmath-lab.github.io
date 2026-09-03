@@ -36,6 +36,15 @@ const PEOPLE_GROUPS = [
                 email: "miraclecch@korea.ac.kr",
                 interests: "Time Series Forecasting, Knot Theory",
                 homepage: ""
+            },
+            {
+                name: "Junho Ji",
+                role: "",
+                degree: "",
+                current: "",
+                email: "wnsgh8996@gmail.com",
+                interests: "TDA, Deep Learning",
+                homepage: ""
             }
         ]
     },
