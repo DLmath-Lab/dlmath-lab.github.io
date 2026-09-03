@@ -154,7 +154,7 @@ const PEOPLE_GROUPS = [
                 degree: "",
                 current: "",
                 email: "rlawpgml04@gmail.com",
-                interests: "Topological Data Analysis, Deep Learning",
+                interests: "TDA, Deep Learning",
                 homepage: ""
             }
         ]
