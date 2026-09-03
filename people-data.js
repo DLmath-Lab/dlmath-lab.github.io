@@ -138,6 +138,15 @@ const PEOPLE_GROUPS = [
                 email: "rareuniv1@korea.ac.kr",
                 interests: "Deep Learning, AI Security",
                 homepage: ""
+            },
+            {
+                name: "Jehui KIm",
+                role: "",
+                degree: "",
+                current: "",
+                email: "rlawpgml04@gmail.com",
+                interests: "Topological Data Analysis, Deep Learning",
+                homepage: ""
             }
         ]
     },
