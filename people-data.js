@@ -76,7 +76,7 @@ const PEOPLE_GROUPS = [
                 degree: "",
                 current: "",
                 email: "dorage1105@korea.ac.kr",
-                interests: "Topological Data Analysis, Computer Vision, Computational Topology, Topological Deep Learning",
+                interests: "TDA, Computer Vision, Computational Topology, Topological Deep Learning",
                 homepage: ""
             },
             {
