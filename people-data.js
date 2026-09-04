@@ -156,6 +156,15 @@ const PEOPLE_GROUPS = [
                 email: "rlawpgml04@gmail.com",
                 interests: "TDA, Deep Learning",
                 homepage: ""
+            },
+            {
+                name: "Kangmin Hong",
+                role: "",
+                degree: "",
+                current: "",
+                email: "",
+                interests: "Deep learning,  Reinforcemnt learning",
+                homepage: ""
             }
         ]
     },
