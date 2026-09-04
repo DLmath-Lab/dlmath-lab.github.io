@@ -165,6 +165,15 @@ const PEOPLE_GROUPS = [
                 email: "jin126700@korea.ac.kr",
                 interests: "Deep learning,  Reinforcemnt learning",
                 homepage: ""
+            },
+            {
+                name: "Hyeok Kwon",
+                role: "",
+                degree: "",
+                current: "",
+                email: "namicad@korea.ac.kr",
+                interests: "Computer Vision, Large Language Model",
+                homepage: ""
             }
         ]
     },
