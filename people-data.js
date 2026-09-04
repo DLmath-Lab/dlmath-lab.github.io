@@ -162,7 +162,7 @@ const PEOPLE_GROUPS = [
                 role: "",
                 degree: "",
                 current: "",
-                email: "",
+                email: "jin126700@korea.ac.kr",
                 interests: "Deep learning,  Reinforcemnt learning",
                 homepage: ""
             }
