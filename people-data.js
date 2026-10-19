@@ -113,6 +113,15 @@ const PEOPLE_GROUPS = [
                 homepage: ""
             },
             {
+                name: "Seho Ahn",
+                role: "",
+                degree: "",
+                current: "",
+                email: "shahn21c@naver.com",
+                interests: "Computer Vision, Time Series Forecasting",
+                homepage: ""
+            },
+            {
                 name: "Seungjoo Kim",
                 role: "",
                 degree: "",
@@ -203,7 +212,7 @@ const PEOPLE_GROUPS = [
                 name: "Soobin Bae",
                 role: "",
                 degree: "M.S. Alumni | 2026",
-                current: "PIXXGEN | Intern",
+                current: "PIXXGEN",
                 email: "",
                 interests: "",
                 homepage: ""
