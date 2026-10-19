@@ -113,15 +113,6 @@ const PEOPLE_GROUPS = [
                 homepage: ""
             },
             {
-                name: "Seho Ahn",
-                role: "",
-                degree: "",
-                current: "",
-                email: "shahn21c@naver.com",
-                interests: "Computer Vision, Time Series Forecasting",
-                homepage: ""
-            },
-            {
                 name: "Seungjoo Kim",
                 role: "",
                 degree: "",
